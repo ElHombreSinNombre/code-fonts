@@ -4,7 +4,10 @@ This a simple mashups of the **[Victor Mono](https://github.com/rubjo/victor-mon
 
 We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**
 
+![Example](img/code.png)
+
 After all we can customize settings adding something like this (**Visual Code** example).
+
 
     "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
     "editor.tokenColorCustomizations": {
