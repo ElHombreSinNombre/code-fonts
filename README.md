@@ -8,13 +8,13 @@ We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**.
 
 After all we can customize settings adding something like this in *settings.json* (**Visual Code** example).
 
-
     "editor.tokenColorCustomizations": {
         "textMateRules": [
           {
             "scope": [
               "markup.heading",
-              "markup.bold"
+              "markup.bold",
+              "strong",
             ],
             "settings": {
               "fontStyle": "bold"
@@ -22,39 +22,23 @@ After all we can customize settings adding something like this in *settings.json
           },
           {
             "scope": [
-              "strong",
-              "emphasis",
-              "entity.other.attribute-name",
+              "this",
               "markup.italic",
-              "punctuation.definition.template-expression.begin",
-              "punctuation.definition.template-expression.end",
-              "punctuation.section.embedded",
-              "meta.decorator punctuation.decorator",
-              "punctuation.definition.comment",
               "comment",
               "entity.name.type.class",
-              "keyword",
-              "constant",
-              "storage.modifier",
-              "storage.type",
-              "storage.type.class.js",
+              //"string",
+              //"constant",
+              //IMPORTS
+              "meta.import.ts meta.block.ts variable.other.readwrite.alias.ts",
+              "meta.import.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
+              "meta.import.js variable.other",
+              "meta.export.ts meta.block.ts variable.other.readwrite.alias.ts",
+              "meta.export.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
+              "meta.export.js variable.other",  
             ],
             "settings": {
               "fontStyle": "italic"
             }
           },
-          {
-            "scope": [
-              "invalid",
-              "keyword.operator",
-              "constant.numeric.css",
-              "keyword.other.unit.px.css",
-              "constant.numeric.decimal.js",
-              "constant.numeric.json"
-            ],
-            "settings": {
-              "fontStyle": ""
-            }
-          }
         ]
-    }
+      },
