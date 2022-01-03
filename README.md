@@ -31,12 +31,6 @@ After all we can customize settings adding something like this (**Visual Code** 
           }
         },
         {
-          "scope": "markup.underline",
-          "settings": {
-            "fontStyle": "underline"
-          }
-        },
-        {
           "scope": "markup.bold",
           "settings": {
             "fontStyle": "bold"
