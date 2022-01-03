@@ -2,7 +2,7 @@
 
 This a simple mashups of the **[Victor Mono](https://github.com/rubjo/victor-mono)** and **[Fira Code](https://github.com/tonsky/FiraCode)** fonts.
 
-We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**
+We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**.
 
 After all we can customize settings adding something like this (**Visual Code** example).
 
