@@ -6,7 +6,7 @@ We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**.
 
 ![Example](img/code.png)
 
-After all we can customize settings adding something like this (**Visual Code** example).
+After all we can customize settings adding something like this in *settings.json* (**Visual Code** example).
 
 
     "editor.tokenColorCustomizations": {
