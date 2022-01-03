@@ -57,3 +57,4 @@ After all we can customize settings adding something like this (**Visual Code** 
         }
       }
     ]
+    }
