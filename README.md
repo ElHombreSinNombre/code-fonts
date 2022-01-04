@@ -8,10 +8,11 @@ We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**.
 
 After all we can customize settings adding something like this in *settings.json* (**Visual Code** example).
 
-    "editor.tokenColorCustomizations": {
+      "editor.tokenColorCustomizations": {
         "textMateRules": [
           {
             "scope": [
+              //GLOBAL
               "markup.heading",
               "markup.bold",
               "strong",
@@ -22,33 +23,36 @@ After all we can customize settings adding something like this in *settings.json
           },
           {
             "scope": [
+              //GLOBAL
               "markup.italic",
               "entity.name.type.class",
+              "entity.name.function",
+              "entity.other.inherited-class",
               "keyword",
               //"comment",
               //PHP
-              "entity.other.inherited-class",
               "support.class",
               "support.other.namespace",
-              "entity.name.function",
               "support.function",
               "variable.language.this",
               //JS
               "meta.import.ts meta.block.ts variable.other.readwrite.alias.ts",
               "meta.import.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
-              "meta.import.js variable.other",
-              "meta.export.ts meta.block.ts variable.other.readwrite.alias.ts",
-              "meta.export.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
-              "meta.export.js variable.other",  
-              "this"
+              "meta.import.js variable.other", 
+              "this",
+              //HTML
+              "entity.other.attribute-name.html",
+              //TWIG
+              "variable.other.twig",
+              //BLADE
+              "variable.other.blade"
             ],
             "settings": {
               "fontStyle": "italic"
             }
           },
-          
         ]
-      },
+      }
 
 We can identify the elements in **Visual Code** with 
 
