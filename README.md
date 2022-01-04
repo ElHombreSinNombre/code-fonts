@@ -22,23 +22,38 @@ After all we can customize settings adding something like this in *settings.json
           },
           {
             "scope": [
-              "this",
               "markup.italic",
-              "comment",
               "entity.name.type.class",
-              //"string",
-              //"constant",
-              //IMPORTS
+              "keyword",
+              //"comment",
+              //PHP
+              "entity.other.inherited-class",
+              "support.class",
+              "support.other.namespace",
+              "entity.name.function",
+              "support.function",
+              "variable.language.this",
+              //JS
               "meta.import.ts meta.block.ts variable.other.readwrite.alias.ts",
               "meta.import.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
               "meta.import.js variable.other",
               "meta.export.ts meta.block.ts variable.other.readwrite.alias.ts",
               "meta.export.tsx meta.block.tsx variable.other.readwrite.alias.tsx",
               "meta.export.js variable.other",  
+              "this"
             ],
             "settings": {
               "fontStyle": "italic"
             }
           },
+          
         ]
       },
+
+We can identify the elements in **Visual Code** with 
+
+> ctrl + shift + p
+
+And search *Inspect Editor Tokens and Scopes* 
+
+![Token](img/token.jpg)
