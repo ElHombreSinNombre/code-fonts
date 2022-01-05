@@ -44,6 +44,7 @@ After all we can customize settings adding something like this in *settings.json
           {
             "scope": [
               "variable.other",
+              "entity.name.function"
             ],
             "settings": {
               "fontStyle": ""
