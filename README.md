@@ -8,46 +8,49 @@ We create this mix with **[FontForge](https://fontforge.org/en-US/downloads/)**.
 
 After all we can customize settings adding something like this in *settings.json* (**Visual Code** example).
 
-    "editor.tokenColorCustomizations": {
-      "textMateRules": [
-        {
-          "scope": [
-            //GLOBAL
-            "markup.heading",
-            "markup.bold",
-            "strong",
-          ],
-          "settings": {
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": [
-            //GLOBAL
-            "markup.italic",
-            "entity.name.type.class",
-            "entity.name.function",
-            "keyword",
-            "entity.other",
-            //"comment",
-            //PHP
-            "support.class",
-            "support.other.namespace",
-            "support.function",
-            "variable.language.this",
-            //JS
-            "meta.import",
-            "this",
-            //HTML
-            "meta.function-call",
-            "punctuation.section.tag",
-          ],
-          "settings": {
-            "fontStyle": "italic"
-          }
-        },
-      ]
-    },
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              "markup.heading",
+              "markup.bold",
+              "strong",
+            ],
+            "settings": {
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": [
+              "markup.italic",
+              "entity.name.type.class",
+              "entity.name.function",
+              "keyword",
+              "entity.other",
+              //"comment",
+              "support.class",
+              "support.other.namespace",
+              "support.function",
+              "variable.language.this",
+              "meta.import",
+              "this",
+              "meta.function-call",
+              "punctuation.section.tag",
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": [
+              "variable.other",
+            ],
+            "settings": {
+              "fontStyle": ""
+            }
+          },
+        ]
+      },
 
 We can identify the elements in **Visual Code** with 
 
